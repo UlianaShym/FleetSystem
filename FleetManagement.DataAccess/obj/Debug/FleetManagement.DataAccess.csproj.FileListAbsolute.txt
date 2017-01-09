@@ -1,0 +1,10 @@
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\FleetManagement.DataAccess.dll.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\FleetManagement.DataAccess.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\FleetManagement.DataAccess.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\FleetManagement\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.pdb

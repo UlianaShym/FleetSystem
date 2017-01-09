@@ -1,0 +1,211 @@
+﻿html{
+	font-family: sans-serif;
+}
+body{
+	margin:0 !important;
+	background-color:#262a2f !important;
+	color:#f0f0f0 !important;
+}
+a {
+    text-decoration: none;
+    background: none;
+}
+.up_menu{
+	background-color:#21262c;
+	width: 100%;
+    display: inline-block;
+}
+.up_menu > div{
+	display:inline-block;
+	color: #fafafa;	
+	margin:10px 0px 10px 5px;
+}
+.up_menu_left{	
+	font-size:130%;
+	margin-top:13px !important;
+}
+.up_menu_right{
+	float:right;
+	padding-right: 1em;
+}
+.up_menu_right > ul{	
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;	
+}
+.up_menu_right > ul > li{	
+    float: left;
+    margin-left: 0.75em;
+    padding-top: 0.75em;
+    font-size: 0.75em;
+    white-space: nowrap;
+	min-width:40px;
+	text-align:center;
+	cursor: pointer;
+}
+
+.up_menu_right > ul > li.selected{
+	padding-top: 0.5em !important;
+	border-top:0.3em solid #3486ab;
+}
+.search_div{
+	padding-top: 0.25em !important;
+}
+.search_div img{
+	height:23px;
+	width:auto;
+}
+.elements_block{
+	position:relative;
+}
+.center_elements{
+	left:50%;
+	transform: translate(-50%, 0);
+	position:absolute;	
+	margin:0;
+	text-align:center;
+}
+.top_title{
+	background-image:url("../themes/base/images/top_title.jpg");	
+	min-height: 850px;	
+}
+.paralax{
+	/*min-height: 500px;*/
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_info{
+	height:500px;
+}
+.scroll_me{	
+	bottom:0;		
+}
+.title_p{
+	top:50%;
+	font-size: 300%;
+	/*font-family: Montserrat;*/
+	font-weight: bold;
+	text-align:center;
+}
+acc{
+	color:#16a6e6;
+}
+.info_stat{
+	display: inline-flex;
+}
+.circle{
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.info_stat>div {
+	width: 150px;
+	height: 150px;
+	background: #16a6e6;
+	margin:20px 25px;
+}
+.info_stat>div>div {
+	margin:8px;
+	width: 134px;
+	height: 134px;
+	background: #394351;
+}
+.info_val{
+	font-size:180%;
+	padding-top:28px;
+	font-weight: bold;
+}
+.info_type{
+	text-transform: uppercase;
+}
+.hor_sep{
+	width:40px;
+	margin:0 auto;
+}
+.hor_sep>hr{
+	border-top: 2px solid #8c8b8b;
+}
+.our_cars{
+	background-color:#1e2125;
+}
+h1{
+	margin-top:0;
+	padding-top:50px;
+	text-align:center;
+	font-size:250%;
+	text-transform: uppercase;
+}
+.Trucks_list{
+	width:80%;
+	margin:0 auto;
+}
+.Truck{
+	display:inline-block;
+	width:48%;
+	margin: 50px 5px;
+}
+.Truck>div{
+	display:inline-block;
+}
+.truck_image{
+	position:absolute;
+}
+.truck_image>img{
+	width:200px;
+	height:auto;
+}
+.truck_info{
+	margin-left:220px;
+}
+.truck_title{
+	text-transform: uppercase;
+}
+.read_more {
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	background-color: #262a2f; 
+    border: 2px solid #178dbf;
+	
+}
+.read_more:hover{
+    background-color: #178dbf;
+}
+.view_more{
+	padding: 10px 20px;
+    width: 170px;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    display: block;
+}
+.footer{
+	height:50px;
+}
+.footer > div{
+	position: relative;
+    display: inline-block;
+    width: 33%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+@media screen and (max-width: 988px) {
+    .Truck{
+		width:100%;
+	}
+}
