@@ -2,14 +2,56 @@
 	font-family: sans-serif;
 }
 body{
-	margin:0 !important;
-	background-color:#262a2f !important;
-	color:#f0f0f0 !important;
+	margin:0;
+	background-color:#262a2f;
+	color:#f0f0f0;
 }
 a {
     text-decoration: none;
     background: none;
+    color:#fafafa;
 }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    z-index: 1;
+    padding: 7px;
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    min-width: 160px;
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
+    right: 0px;
+    padding-top: 20px;
+}
+.dropdown-content input{
+	margin: 3px 0 2px 0;
+    background: initial;
+    border: solid 1px #16a6e6;
+    border-radius: 4px;
+    font-size: 100%;
+    color: #fafafa;
+}
+.dropdown-content input:focus{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.dropdown-content button{
+	margin-top:3px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: inherit;
+    border: 2px solid #178dbf;
+}
+.dropdown-content button:hover{
+    background-color:#178dbf;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .up_menu{
 	background-color:#21262c;
 	width: 100%;
@@ -55,6 +97,26 @@ a {
 	height:23px;
 	width:auto;
 }
+.search_div input[type="text"] {
+    width: 75px;
+    margin: 0;
+    height: 23px;
+    background-color: inherit;
+    color: #fafafa;
+    text-align: right;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-color:#fafafa;
+    background-color: inherit;
+    background-image: url(../../Images/search.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+}
+
+.search_div input[type="text"]:focus {
+    width:300px ;
+}
 .elements_block{
 	position:relative;
 }
@@ -66,8 +128,19 @@ a {
 	text-align:center;
 }
 .top_title{
-	background-image:url("../themes/base/images/top_title.jpg");	
-	min-height: 850px;	
+	background-image:url("../../Images/top_title.jpg");	
+	min-height: 850px;
+	position:relative;
+}
+.top_cars{
+	background-image:url("../../Images/cars_title.jpg");	
+	min-height: 300px;
+	position:relative;
+}
+.top_contact{
+	background-image:url("../../Images/contact_title.jpg");	
+	min-height: 400px;
+	position:relative;
 }
 .paralax{
 	/*min-height: 500px;*/
@@ -79,6 +152,7 @@ a {
 }
 .main_info{
 	height:500px;
+	position:relative;
 }
 .scroll_me{	
 	bottom:0;		
@@ -88,19 +162,39 @@ a {
 	font-size: 300%;
 	/*font-family: Montserrat;*/
 	font-weight: bold;
-	text-align:center;
+	/*text-align:center;*/
+}
+.blur{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    background-color: #262a2f;
 }
 acc{
 	color:#16a6e6;
-}
-.info_stat{
-	display: inline-flex;
 }
 .circle{
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
+
+.footer{
+	background-color: #21262d;
+}
+.footer > div{
+    display: inline-block;
+    width: 33%;
+}
+/*----------------------------------------------------------------------*/
+/*								Home									*/
+/*----------------------------------------------------------------------*/
+
+.info_stat{
+	display: inline-flex;
+}
+
 .info_stat>div {
 	width: 150px;
 	height: 150px;
@@ -146,10 +240,10 @@ h1{
 	display:inline-block;
 	width:48%;
 	margin: 50px 5px;
-}
+}/*
 .Truck>div{
 	display:inline-block;
-}
+}*/
 .truck_image{
 	position:absolute;
 }
@@ -191,21 +285,312 @@ h1{
     margin-top: 25px;
     display: block;
 }
-.footer{
-	height:50px;
+
+/*----------------------------------------------------------------------*/
+/*								Cars									*/
+/*----------------------------------------------------------------------*/
+.page_list{
+	display:flex;
+	width:80%;
+	margin:auto auto;
+	margin-bottom:25px;
 }
-.footer > div{
-	position: relative;
-    display: inline-block;
-    width: 33%;
+.page_button{
+	width:15%;
+	transform: translate(0, 30%);
+	margin: auto 5px;
+}
+.page_button > div{
+	display: inline-block;
+    border: solid 1px #fff;
+    padding: 3px 5px;
+    min-width: 60px;
+    text-align: center;
+}
+.dis_but{
+	color:#78858e;
+}
+.page_button> div:hover{
+	cursor:pointer;	
+}
+.page_navig{
+	text-align:center;
+	width: 70%;
+}
+.page_navig > ul{
+	list-style-type: none;
+    list-style-image: none;
+    padding-left: 0;
+	display:inline-block;
+}
+.page_navig > ul > li{
+	line-height: 1.125em;
+    float: left;
+    margin-left: 0.75em;
+    margin-top: 0.5em;
+    font-size: 0.75em;
+    white-space: nowrap;
+    position: relative;	
+}
+.page_navig  a{
+	color: #fff;
+	padding:5px 7px 6px 7px;
+	margin: 1px 2px 0 2px;
+	background: #16678a;
+	border-radius:6px;
+	text-decoration: none;
+	cursor:pointer;
+}
+.page_navig a:hover{
+	background: #16a6e6 !important;
+	
+}
+.page_navig  .selected{
+	background: #16a6e6 !important;
+}
+.truck_stat{
+	margin-left:270px;
+	min-width: 165px;
+}
+.test{
+	display:inline-block;
+}
+.test>h5{
+	-webkit-margin-before: 0;
+    -webkit-margin-end: 1.67em;
+}
+.Truck_more_info{
+	width: auto;
+    display: inline-flex;
+	background-color:#21262d;
+	padding: 20px 10px;
+	margin-top:0;
+	margin-bottom:25px;
+	position:relative;
+}
+.Truck_more_info .truck_info{
+	margin-left:50px;
+	-webkit-margin-after: .5em;
+}
+.Truck_more_info .truck_info > div{
+	-webkit-margin-after: .5em;
+}
+.Truck_more_info .read_more{
+	width:100%;
+	display:block;
+}
+.Truck_more_info > .truck_image {
     top: 50%;
     transform: translate(0, -50%);
 }
+.Truck_more_info > .truck_image>img {
+    width: 250px;
+    height: auto;
+}
+/*----------------------------------------------------------------------*/
+/*								contact us								*/
+/*----------------------------------------------------------------------*/
+.map_and_con{
+	background-color:#1e2125;
+	min-height:500px;
+}
+.contact_map{
+	min-height:500px;
+	min-width:600px;
+	position:absolute !important;
+	width:50%;	
+}
+.contact_us{
+	margin-left:50%;	
+}
+.contact_desc{
+	text-align: center;
+	font-size:80%;
+	margin: 0 50px;
+	color: rgb(194, 207, 216);
+}
+.contact_info{
+	height: 200px;
+    margin: auto;
+    width: 525px;
+    display: flex;
+	text-align:center;
+}
+.contact_info .circle{
+	width: 125px;
+    height: 125px;
+    background: #16a6e6;
+    margin: 20px 25px;
+	display:inline-block;
+}
+.contact_info img {
+	width:75px;
+	margin:auto;
+	transform: translate(0, 25px);
+}
+.contact_title{
+	font-weight: bold;
+}
+.contact_value{
+	font-size: 80%;
+    color: rgb(194, 207, 216);
+    margin: 10px 0;
+}
+.message_form{
+	width:60%;
+	margin:auto;
+	text-align:center;
+	
+}
+.message_form > input, textarea{
+	background-color: #262a2f;
+    border: solid 1px #16a6e6;
+    border-radius: 4px;
+    padding: 5px 1%;
+    width: 43%;	
+    font-size: 100%;
+	margin:15px 1%;
+	color:#fff;
+}
+textarea{
+	width:91%;
+}
+.message_subm{
+	padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #262a2f;
+    border: 2px solid #178dbf;
+}
+.message_subm:hover{
+	background-color: #178dbf;
+}
+/*----------------------------------------------------------------------*/
+/*								car info								*/
+/*----------------------------------------------------------------------*/
 
+.dark{
+	background-color:#21262d;
+}
+.car_content{
+	margin:25px 50px;
+}
+.car_content > div{
+	max-width: 1200px;
+	margin: auto;
+	-webkit-margin-after: 25px;
+}
+.work_chart{
+	min-width: 550px;
+    width: 70%;
+    height: 450px;
+    
+}
+.car_main_info{
+	position:relative;
+	min-width: 940px;
+	height: 450px;
+}
+.car_main_info > div{
+	position: absolute;
+}
+.car_info{
+	right:0;
+	height: 450px;
+	width: calc(30% - 25px);
+	min-width: 275px;
+}
+.car_info > div{
+	transform: translate(0, 50px);
+}
+.image_info{
+	width:275px;
+	margin: 0 auto;
+}
+.car_info img{
+	width:275px;
+}
+.car_info h2, .car_info h3, .car_info h4{
+	text-align:center;
+}
+.rate_bg{
+	background-image: url('../../Images/rate_bg.png');
+	
+	width:160px;
+	height:32px;
+	margin: auto auto;
+}
+.rate_stars{
+	background-image: url('../../Images/star.png');
+	background-size: 32px 32px;
+	width:160px;
+	height:32px;
+	margin: auto auto;
+	z-index: 2;
+}
+.rate{
+	background-image: url('../../Images/rate.png');
+	width:0;
+	height: 32px;
+	margin: 0 0;
+	z-index: 1;
+}
+.car_stat{
+	color:gray;
+}
+.car_stat > div {
+	display: inline-block;
+    width: 23%;
+    padding: 20px 0;
+    -webkit-margin-start: 2.19%;
+}
+.car_stat > div > div {
+	margin-left:25px;
+}
+.car_stat > div > div > div{
+	-webkit-margin-after: 10px;
+}
+wc{
+	color:#fff;
+}
+/*----------------------------------------------------------------------*/
+/*								responsive								*/
+/*----------------------------------------------------------------------*/
 
-
+/*---------------------------	Home page	----------------------------*/
 @media screen and (max-width: 988px) {
     .Truck{
 		width:100%;
 	}
+}
+/*--------------------------	Contact page	------------------------*/
+@media screen and (max-width: 1200px) {
+	.contact_map{
+		position:relative !important;
+		width: 100%;
+	}
+	.contact_us{
+		margin-left: 0;
+		padding-bottom: 20px;
+	}
+}
+/*---------------------------	Car page	----------------------------*/
+@media screen and (max-width: 821px) {
+    .message_form > input, textarea{
+		width: 95%;
+		min-width:200px;
+	}
+	.message_form{
+		width:80%;
+	}
+}
+@media screen and (max-width: 1060px) {
+	.car_content{
+		margin: 25px 10px;
+	}
+    
 }

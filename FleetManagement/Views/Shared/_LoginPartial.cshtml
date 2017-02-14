@@ -1,4 +1,4 @@
-﻿@if (Request.IsAuthenticated) {
+﻿@*@if (Request.IsAuthenticated) {
     <text>
         Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!
         @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
@@ -11,4 +11,31 @@
         <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
+}*@
+
+@if (Request.IsAuthenticated)
+{
+    <text>
+        Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!
+        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        }
+    </text>
+}
+else
+{    
+	
+		@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+		<div class="dropdown-content">
+			<form action="/api/login" method="post" name="loginForm">
+				<input type="text" placeholder="User Name" name="username"/>
+				<br/>
+				<input type="password" placeholder="Password" name="password"/>
+				<br/>
+				<button type="submit">Log in</button>
+			</form>								
+		</div>
+	
 }

@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-
+<!--
 <hgroup class="title">
     <h1>@ViewBag.Title.</h1>
     <h2>@ViewBag.Message</h2>
@@ -48,3 +48,63 @@
         Redmond, WA 98052-6399
     </p>
 </section>
+-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYPqGGRZNZuaENVkwuGplf0ULdM6fw6vk"></script>
+<script type="text/javascript" src = "../../Scripts/jscript.js">
+</script>
+
+<div class="top_contact paralax">
+	<div class="blur"></div>
+	<p class="title_p center_elements">CONTACT US</p>			
+</div>
+		
+<div id = "content">
+	<div class="map_and_con">
+		<div id = "map" class="contact_map">
+		</div>
+		<div class="contact_us">
+			<h1> <acc>CONTACT</acc> US</h1>
+			<div class="contact_desc"> Euro Truck Simulator is a European first - A truck simulation game in a European setting, with European long haulage trucks! Drive cargos from Rome to Berlin to Madrid to Prague - and many more cities - in realistic vehicles. Euro Truck Simulator is a faithful reproduction of driving trucks on the European road </div>
+			<div class="contact_info">
+				<div>
+					<div class="circle">
+						<img src="../../Images/phone.png"/>
+					</div>
+					<div class="contact_title"> Call Us</div>
+					<div class="contact_value"> +380 97 111 11 11</div>
+				</div>
+				<div>
+					<div class="circle">
+						<img src="../../Images/mail.png"/>
+					</div>
+						<div class="contact_title"> Email Us</div>
+						<div class="contact_value"> our_mail@gmail.com</div>
+					</div>
+				<div>
+					<div class="circle">
+						<img src="../../Images/GPS.png"/>
+					</div>
+					<div class="contact_title"> Find Us</div>
+					<div class="contact_value"> Lviv 27019, st. Universuty 1</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			
+			
+	<div style="margin-bottom: 20px;">
+		<h1><acc>WRITE A </acc> MESSAGE</h1>
+		<form class="message_form" action="#">
+					
+			<input type="text" name="Firstname" placeholder="Full Name">
+			<input type="text" name="Email" placeholder="Email">
+			<input type="text" name="Phone" placeholder="Phone">
+			<input type="text" name="Subject" placeholder="Subject">
+			<textarea rows="10" cols="45" name="message_box" placeholder="Message"/></textarea>
+			<button type="submit" class="message_subm">
+			Send Message
+			</button>
+		</form>
+	</div>
+</div>

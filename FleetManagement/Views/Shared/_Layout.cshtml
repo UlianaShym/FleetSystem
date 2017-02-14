@@ -2,42 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>@ViewBag.Title - My ASP.NET MVC Application</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
+        @Styles.Render(new String[] { "~/Content/css", "~/Content/Styles/styles.css" })
         @Scripts.Render("~/bundles/modernizr")
     </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
+    <body>        
+        <div class="up_menu">
+            <div class="up_menu_left"> TRUCKS</div>
+            <div class="up_menu_right">
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Cars", "Cars", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="search_div">
+                        <form>
+                            <input type="text" name="search" placeholder="Search..">
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <section id="login">
+                            @Html.Partial("_LoginPartial")
+                        </section>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
         <div id="body">
             @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
+        <div class="footer">
+            <div style="text-align:left; font-size:60%">&copy; @DateTime.Now.Year - My ASP.NET MVC Application</div>
+            <div style="text-align:center; font-size: 130%">TRUCKS</div>
+            <div style="text-align:right">social network icons</div>
+        </div>
 
         @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)

@@ -1,102 +1,101 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<!DOCTYPE html>
-<html lang="uk-UA">
-<head>
-    <title>TRUCKS</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Content/Styles/styles.css">
-</head>
 
-<body>
-    <div class="top_title paralax elements_block">
-        <p class="title_p center_elements"> A NEW GENERATION OF TRUCKS</p>
-        <p class="scroll_me center_elements">SCROLL ME</p>
-    </div>
-
-    <div class="main_info elements_block">
-        <div class="center_elements">
-            <h1><acc> we offer</acc> service </h1>
-            <p>Euro Truck Simulator is a European first - A truck simulation game in a European setting, with European long haulage trucks! Drive cargos from Rome to Berlin to Madrid to Prague - and many more cities - in realistic vehicles. Euro Truck Simulator is a faithful reproduction of driving trucks on the European road.</p>
-            <p>Drive across a realistic depiction of Europe, visit its beautiful cities, pick up a variety of cargos, and deliver them on time!</p>
-            <div class="info_stat">
-                <div class="circle">
-                    <div class="circle">
-                        <div class="info_val">1488</div>
-                        <div class="hor_sep"><hr></div>
-                        <div class="info_type">distance</div>
-                    </div>
+		
+<div class="top_title paralax">
+	<div class="blur"></div>
+	<p class="title_p center_elements"> A NEW GENERATION OF TRUCKS</p>
+	<p class="scroll_me center_elements">SCROLL ME</p>
+</div>
+		
+<div id = "content">
+	<div class="main_info">
+		<div class="center_elements">
+			<h1><acc> we offer</acc> service </h1>
+			<p>Euro Truck Simulator is a European first - A truck simulation game in a European setting, with European long haulage trucks! Drive cargos from Rome to Berlin to Madrid to Prague - and many more cities - in realistic vehicles. Euro Truck Simulator is a faithful reproduction of driving trucks on the European road.</p>
+			<p>Drive across a realistic depiction of Europe, visit its beautiful cities, pick up a variety of cargos, and deliver them on time!</p>
+			<div class="info_stat">
+				<div class="circle">
+					<div class="circle">
+						<div class="info_val">1488</div>
+						<div class="hor_sep"><hr></div>
+						<div class="info_type">distance</div>
+					</div>
+				</div>
+				<div class="circle">
+					<div class="circle">
+						<div class="info_val">48</div>
+						<div class="hor_sep"><hr></div>
+						<div class="info_type">cars</div>
+					</div>
+				</div>
+				<div class="circle">
+					<div class="circle">
+						<div class="info_val">150</div>
+						<div class="hor_sep"><hr></div>
+						<div class="info_type">trips</div>
+					</div>
+				</div>
+				<div class="circle">
+					<div class="circle">
+						<div class="info_val">23</div>
+						<div class="hor_sep"><hr></div>
+						<div class="info_type">countries</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+	</div>
+	<div class="our_cars">
+		<h1> <acc>OUR</acc> CARS</h1>
+		<div class="Trucks_list">
+			<div class="Truck">
+				<div class="truck_image"><img src="../../Images/Truck_1_200px.png"/></div>
+				<div class="truck_info">
+					<div class="truck_title">Mack truck</div>
+					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
+                    <a href="@Url.Action("Car", "Home")">
+                        <button class="read_more">Read More</button>
+                    </a>
+				</div>
+			</div>
+			<div class="Truck">
+				<div class="truck_image"><img src="../../Images/Truck_2_200px.png"/></div>
+				<div class="truck_info">
+					<div class="truck_title">Mack truck</div>
+					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
+                    <a href="@Url.Action("Car", "Home")">
+                        <button class="read_more">Read More</button>
+                    </a>
+				</div>
+			</div>
+			<div class="Truck">
+				<div class="truck_image"><img src="../../Images/Truck_3_200px.png"/></div>
+				<div class="truck_info">
+					<div class="truck_title">Mack truck</div>
+					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
+                    <a href="@Url.Action("Car", "Home")">
+                        <button class="read_more">Read More</button>
+                    </a>
+				</div>
+			</div>
+			<div class="Truck">
+				<div class="truck_image"><img src="../../Images/Truck_4_200px.png"/></div>
+				<div class="truck_info">
+					<div class="truck_title">Mack truck</div>
+					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
+                    <a href="@Url.Action("Car", "Home")">
+                        <button class="read_more">Read More</button>
+                    </a>
                 </div>
-                <div class="circle">
-                    <div class="circle">
-                        <div class="info_val">48</div>
-                        <div class="hor_sep"><hr></div>
-                        <div class="info_type">cars</div>
-                    </div>
-                </div>
-                <div class="circle">
-                    <div class="circle">
-                        <div class="info_val">150</div>
-                        <div class="hor_sep"><hr></div>
-                        <div class="info_type">trips</div>
-                    </div>
-                </div>
-                <div class="circle">
-                    <div class="circle">
-                        <div class="info_val">23</div>
-                        <div class="hor_sep"><hr></div>
-                        <div class="info_type">countries</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="our_cars">
-        <h1> <acc>OUR</acc> CARS</h1>
-        <div class="Trucks_list">
-            <div class="Truck">
-                <div class="truck_image"><img src="Content/themes/base/images/Truck_1_200px.png"></div>
-                <div class="truck_info">
-                    <div class="truck_title">Mack truck</div>
-                    <div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <button class="read_more">Read More</button>
-                </div>
-            </div>
-            <div class="Truck">
-                <div class="truck_image"><img src="Content/themes/base/images/Truck_2_200px.png"></div>
-                <div class="truck_info">
-                    <div class="truck_title">Mack truck</div>
-                    <div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <button class="read_more">Read More</button>
-                </div>
-            </div>
-            <div class="Truck">
-                <div class="truck_image"><img src="Content/themes/base/images/Truck_3_200px.png"></div>
-                <div class="truck_info">
-                    <div class="truck_title">Mack truck</div>
-                    <div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <button class="read_more">Read More</button>
-                </div>
-            </div>
-            <div class="Truck">
-                <div class="truck_image"><img src="Content/themes/base/images/Truck_4_200px.png"></div>
-                <div class="truck_info">
-                    <div class="truck_title">Mack truck</div>
-                    <div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <button class="read_more">Read More</button>
-                </div>
-            </div>
-        </div>
-        <button class="read_more view_more">view more</button>
-        <div style="height:25px"></div>
-    </div>
-    <div class="footer">
-        <div style="text-align:left; font-size:50%">© Copyright 2016 - All Rights Reserved.</div>
-        <div style="text-align:center; font-size: 130%">TRUCKS</div>
-        <div style="text-align:right">social network icons</div>
-    </div>
-</body>
-</html>
+			</div>
+		</div>
+        <a href="@Url.Action("Cars", "Home")">
+            <button class="read_more view_more">view more</button>
+        </a>
+            <div style="height:25px"></div>
+            
+    </div>		
+</div>

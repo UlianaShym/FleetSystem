@@ -28,5 +28,17 @@ namespace FleetManagement.Controllers
 
             return View();
         }
+        public ActionResult Cars()
+        {
+            ViewBag.Message = "Your Cars page.";
+
+            return View();
+        }
+        public ActionResult Car()
+        {
+            ViewBag.Message = "Your Car page.";
+
+            return View();
+        }
     }
 }
