@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FleetManagement.DataAccess.Entities
 {
-    public class Trip : IEntity
+    public class Trip
     {
         public int Id { get; set; }
         public int CarId { get; set; }

@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FleetManagement.DataAccess.Entities;
 using FleetManagement.DataAccess.DbContext;
 
 namespace FleetManagement.DataAccess.Repositories
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, IEntity
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         private ApplicationDbContext _context;
-
-        public Repository(ApplicationDbContext context)
+    
+        public Repository()
         {
-            _context = context;
+            _context = ContexSingleton.GetDbContext();
         }
 
         public IQueryable<TEntity> GetAll()
@@ -40,20 +37,9 @@ namespace FleetManagement.DataAccess.Repositories
 
         public void Update(TEntity entity)
         {
-            var tmpEntity = _context.Set<TEntity>().FirstOrDefault(x => x.Id == entity.Id);
-            if (tmpEntity == null)
-                throw new ArgumentException("No such item exists");
-
-            //tmpEntity = Mapper.Map<TEntity>(entity);
-
-            //_context.Entry(tmpEntity).State = EntityState.Modified;
+           _context.Entry(entity).State = EntityState.Modified;
 
             _context.SaveChanges();
-        }
-
-        public void Delete(TEntity entity)
-        {
-            Delete(entity.Id);
         }
 
         public void Delete(int id)

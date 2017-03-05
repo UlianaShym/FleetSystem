@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
-using System.Globalization;
+﻿using System.Data.Entity;
 using FleetManagement.DataAccess.Entities;
 
 namespace FleetManagement.DataAccess.DbContext
@@ -11,15 +6,13 @@ namespace FleetManagement.DataAccess.DbContext
     public class ApplicationDbContext : System.Data.Entity.DbContext
     {
         public ApplicationDbContext()
-            : base("FleetManaement")
+            : base("FleetManagement")
         {
         }
 
         public DbSet<Car> Cars { get; set; }
-
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
+        public DbSet<Trip> Trips { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Country> Countries { get; set; }
     }
 }
