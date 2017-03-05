@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+@model List<FleetManagement.DataAccess.Entities.Car>
 		
 <div class="top_title paralax">
 	<div class="blur"></div>
@@ -50,48 +50,23 @@
 	</div>
 	<div class="our_cars">
 		<h1> <acc>OUR</acc> CARS</h1>
-		<div class="Trucks_list">
-			<div class="Truck">
-				<div class="truck_image"><img src="../../Images/Truck_1_200px.png"/></div>
-				<div class="truck_info">
-					<div class="truck_title">Mack truck</div>
-					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <a href="@Url.Action("Car", "Home")">
-                        <button class="read_more">Read More</button>
-                    </a>
-				</div>
-			</div>
-			<div class="Truck">
-				<div class="truck_image"><img src="../../Images/Truck_2_200px.png"/></div>
-				<div class="truck_info">
-					<div class="truck_title">Mack truck</div>
-					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <a href="@Url.Action("Car", "Home")">
-                        <button class="read_more">Read More</button>
-                    </a>
-				</div>
-			</div>
-			<div class="Truck">
-				<div class="truck_image"><img src="../../Images/Truck_3_200px.png"/></div>
-				<div class="truck_info">
-					<div class="truck_title">Mack truck</div>
-					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <a href="@Url.Action("Car", "Home")">
-                        <button class="read_more">Read More</button>
-                    </a>
-				</div>
-			</div>
-			<div class="Truck">
-				<div class="truck_image"><img src="../../Images/Truck_4_200px.png"/></div>
-				<div class="truck_info">
-					<div class="truck_title">Mack truck</div>
-					<div>Proin sollicitu ex vitae convallis iaculis. Fusce porttitor, an</div>
-                    <a href="@Url.Action("Car", "Home")">
-                        <button class="read_more">Read More</button>
-                    </a>
+	    <div class="Trucks_list">
+	        @foreach (var item in Model)
+            {
+                <div class="Truck">
+                    <div class="truck_image">
+                        <img src="../../Images/@item.ImageUrl" />
+                    </div>
+                    <div class="truck_info">
+                        <div class="truck_title">@item.Model</div>
+                        <div>@item.Desription</div>
+                        <a href="@Url.Action("Car", "Home")">
+                            <button class="read_more">Read More</button>
+                        </a>
+                    </div>
                 </div>
-			</div>
-		</div>
+            }
+	    </div>
         <a href="@Url.Action("Cars", "Home")">
             <button class="read_more view_more">view more</button>
         </a>

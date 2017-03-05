@@ -6,5 +6,6 @@
         public string Model { get; set; }
         public string Desription { get; set; }
         public int ProduceYear { get; set; }
+        public string ImageUrl { get; set; }
     }
 }
