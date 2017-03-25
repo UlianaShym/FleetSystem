@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "Cars";
 }
-@model List<FleetManagement.DataAccess.Entities.Car>
+@model PagedList.IPagedList<FleetManagement.DataAccess.Entities.Car>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 
 <div class="top_cars paralax">
     <div class="blur"></div>
@@ -29,55 +31,44 @@
     </div>
     <div id="cars_list">
         <div class="Trucks_list">
-           @foreach (var item in Model)
+            @foreach (var item in Model)
             {
-            <div class="Truck Truck_more_info">
-                <div class="truck_image">
-                    <img src="../../Images/@item.ImageUrl" />
-                </div>
-                <div class="truck_stat">
-                    <div class="truck-info-category">
-                        <p>Model</p>
-                        <p>Trips</p>
-                        <p>Cities</p>
-                        <p>KM</p>
-                        <p>Year</p>
+                <div class="Truck Truck_more_info">
+                    <div class="truck_image">
+                        <img src="../../Images/@item.ImageUrl" />
                     </div>
-                    <div class="truck-info-values">
-                        <p>@item.Model</p>
-                        <p>39</p>
-                        <p>18</p>
-                        <p>180 000</p>
-                        <p>@item.ProduceYear</p>
+                    <div class="truck_stat">
+                        <div class="truck-info-category">
+                            <p>Model</p>
+                            <p>Trips</p>
+                            <p>Cities</p>
+                            <p>KM</p>
+                            <p>Year</p>
+                        </div>
+                        <div class="truck-info-values">
+                            <p>@item.Model</p>
+                            <p>39</p>
+                            <p>18</p>
+                            <p>180 000</p>
+                            <p>@item.ProduceYear</p>
+                        </div>
+                        <a href="@Url.Action("Index", "Car")">
+                            <button class="read_more">Read More</button>
+                        </a>
                     </div>
-                    <a href="@Url.Action("Index", "Car")">
-                        <button class="read_more">Read More</button>
-                    </a>
+                    <div class="truck_info">
+                        @item.Desription @item.Desription
+                    </div>
                 </div>
-                <div class="truck_info">
-                    @item.Desription @item.Desription
-                </div>
-            </div>
-           }
+            }
         </div>
     </div>
     <div class="page_list">
-        <div class="page_button">
-            <div class="dis_but">
-                < prev
-            </div>
-        </div>
         <div class="page_navig">
-            <ul>
-                <li><a href="#" class="selected">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-            </ul>
+            @Html.PagedListPager(Model, page => Url.Action("Index",new { page }))
         </div>
-        <div class="page_button">
-            <div style="float: right;">
-                next >
-            </div>
-        </div>
+    </div>
+    <div class="page-info">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
     </div>
 </div>

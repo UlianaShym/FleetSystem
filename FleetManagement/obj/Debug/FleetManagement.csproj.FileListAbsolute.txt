@@ -347,3 +347,5 @@ D:\Documents\GitHub\FleetSystem\FleetManagement\obj\Debug\FleetManagement.dll
 D:\Documents\GitHub\FleetSystem\FleetManagement\obj\Debug\FleetManagement.pdb
 D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.dll
 D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.xml
+D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.Mvc.dll
+D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.Mvc.xml

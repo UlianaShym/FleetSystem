@@ -1,6 +1,8 @@
-﻿using FleetManagement.DataAccess.Entities;
+﻿using System.Collections.Generic;
+using FleetManagement.DataAccess.Entities;
 using System.Linq;
 using System.Web.Mvc;
+using PagedList;
 using FleetManagement.DataAccess.Repositories;
 
 namespace FleetManagement.Controllers
@@ -15,10 +17,12 @@ namespace FleetManagement.Controllers
             this._repository = new Repository<Car>();
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            var cars = _repository.GetAll().Take(6).ToList();
-            return View(cars);
+            var cars = _repository.GetAll().ToList();
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(cars.ToPagedList(pageNumber, pageSize));
         }
 
     }

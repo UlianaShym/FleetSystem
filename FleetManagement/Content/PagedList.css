@@ -13,12 +13,9 @@
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
-  margin-left: -1px;
+  margin-left: 7px;
   line-height: 1.428571429;
   text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
 }
 
 .pagination > li:first-child > a,
@@ -60,7 +57,6 @@
 .pagination > .disabled > a:focus {
   color: #999999;
   cursor: not-allowed;
-  background-color: #ffffff;
   border-color: #dddddd;
 }
 

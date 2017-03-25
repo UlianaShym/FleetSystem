@@ -50,7 +50,7 @@ namespace FleetManagement.Controllers
         }
         public ActionResult Index()
         {
-            TestData(); 
+            //TestData(); 
             var cars = _repository.GetAll().Take(4).ToList();
 
             return View(cars);
