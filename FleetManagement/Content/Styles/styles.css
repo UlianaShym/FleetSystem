@@ -64,7 +64,7 @@ a {
 }
 .up_menu_left{	
 	font-size:130%;
-	margin-top:13px !important;
+	margin-top: 30px !important;
 }
 .up_menu_right{
 	float:right;
@@ -79,7 +79,7 @@ a {
     float: left;
     margin-left: 0.75em;
     padding-top: 0.75em;
-    font-size: 0.75em;
+    font-size: 1.5em !important;
     white-space: nowrap;
 	min-width:40px;
 	text-align:center;
@@ -90,15 +90,13 @@ a {
 	padding-top: 0.5em !important;
 	border-top:0.3em solid #3486ab;
 }
-.search_div{
-	padding-top: 0.25em !important;
-}
+
 .search_div img{
 	height:23px;
 	width:auto;
 }
 .search_div input[type="text"] {
-    width: 75px;
+    width: 175px;
     margin: 0;
     height: 23px;
     background-color: inherit;
