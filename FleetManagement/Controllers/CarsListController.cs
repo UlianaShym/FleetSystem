@@ -1,8 +1,4 @@
-﻿using FleetManagement.DataAccess.DbContext;
-using FleetManagement.DataAccess.Entities;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using FleetManagement.DataAccess.Entities;
 using System.Linq;
 using System.Web.Mvc;
 using FleetManagement.DataAccess.Repositories;
@@ -21,8 +17,8 @@ namespace FleetManagement.Controllers
 
         public ActionResult Index()
         {
-            var cars = _repository.GetAll().ToList();
-            return View();
+            var cars = _repository.GetAll().Take(6).ToList();
+            return View(cars);
         }
 
     }

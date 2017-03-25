@@ -350,12 +350,17 @@ h1{
 	margin-left:270px;
 	min-width: 165px;
 }
-.test{
+.truck-info-category{
 	display:inline-block;
+    margin-left: 5px;
+}
+.truck-info-values {
+    display:inline-block;
+    font-weight: bold;
+    margin-left: 15px;
 }
 .test>h5{
 	-webkit-margin-before: 0;
-    -webkit-margin-end: 1.67em;
 }
 .Truck_more_info{
 	width: auto;
@@ -369,6 +374,7 @@ h1{
 .Truck_more_info .truck_info{
 	margin-left:50px;
 	-webkit-margin-after: .5em;
+    margin-top:15px;
 }
 .Truck_more_info .truck_info > div{
 	-webkit-margin-after: .5em;

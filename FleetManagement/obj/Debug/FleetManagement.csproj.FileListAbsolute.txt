@@ -345,3 +345,5 @@ D:\Documents\GitHub\FleetSystem\FleetManagement\bin\zh-Hant\System.Spatial.resou
 D:\Documents\GitHub\FleetSystem\FleetManagement\obj\Debug\FleetManagement.csprojResolveAssemblyReference.cache
 D:\Documents\GitHub\FleetSystem\FleetManagement\obj\Debug\FleetManagement.dll
 D:\Documents\GitHub\FleetSystem\FleetManagement\obj\Debug\FleetManagement.pdb
+D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.dll
+D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.xml
