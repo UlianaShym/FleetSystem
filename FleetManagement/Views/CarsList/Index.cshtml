@@ -11,23 +11,12 @@
 </div>
 <div id="content">
     <div class="page_list">
-        <div class="page_button">
-            <div class="dis_but">
-                < prev
-            </div>
-        </div>
         <div class="page_navig">
-            <ul>
-                <li><a href="#" class="selected">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-            </ul>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
         </div>
-        <div class="page_button">
-            <div style="float: right;">
-                next >
-            </div>
-        </div>
+    </div>
+    <div class="page-info">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
     </div>
     <div id="cars_list">
         <div class="Trucks_list">
@@ -35,7 +24,7 @@
             {
                 <div class="Truck Truck_more_info">
                     <div class="truck_image">
-                        <img src="../../Images/@item.ImageUrl" />
+                        <img src="../../Images/@item.ImageUrl"/>
                     </div>
                     <div class="truck_stat">
                         <div class="truck-info-category">
@@ -65,7 +54,7 @@
     </div>
     <div class="page_list">
         <div class="page_navig">
-            @Html.PagedListPager(Model, page => Url.Action("Index",new { page }))
+            @Html.PagedListPager(Model, page => Url.Action("Index", new {page}))
         </div>
     </div>
     <div class="page-info">

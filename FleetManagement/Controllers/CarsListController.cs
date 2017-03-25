@@ -20,7 +20,7 @@ namespace FleetManagement.Controllers
         public ActionResult Index(int? page)
         {
             var cars = _repository.GetAll().ToList();
-            int pageSize = 3;
+            int pageSize = 5;
             int pageNumber = (page ?? 1);
             return View(cars.ToPagedList(pageNumber, pageSize));
         }
