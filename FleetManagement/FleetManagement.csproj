@@ -197,9 +197,11 @@
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Styles\styles.css" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AppConnectionController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\CarsListController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -287,6 +289,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jscript_way.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -331,6 +334,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Car\Index.cshtml" />
     <Content Include="Views\CarsList\Index.cshtml" />
+    <Content Include="Views\Map\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

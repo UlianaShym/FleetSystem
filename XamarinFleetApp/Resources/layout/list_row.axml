@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    tools:gridSpec="1|8|#0093eeff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:clickable="true"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    android:longClickable="true">
+    <TextView
+        android:id="@+id/point_id"
+        android:text="id"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp" />
+    <TextView
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/x_y_center"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/point_y"
+        android:text="y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/x_y_center"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:id="@+id/point_x"
+        android:text="x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/rating"
+        android:layout_toRightOf="@id/point_id"
+        android:layout_toLeftOf="@id/x_y_center"
+        android:paddingRight="2dp"
+        android:layout_marginBottom="5dp" />
+</RelativeLayout>

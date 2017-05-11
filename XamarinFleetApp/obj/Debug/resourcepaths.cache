@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <AdditionalAndroidResourcePaths>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.CustomTabs\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.Design\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.Percent\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v4\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.AppCompat\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.CardView\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.GridLayout\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.MediaRouter\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.Preference\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.RecyclerView\23.1.1.0\embedded</AdditionalAndroidResourcePath>
+  </AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.CustomTabs\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.Design\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.Percent\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v4\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v4\23.1.1.0\embedded\libs\internal_impl-23.1.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.AppCompat\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.CardView\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.GridLayout\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.MediaRouter\23.1.1.0\embedded\libs\internal_impl-23.1.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.MediaRouter\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.Palette\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.Preference\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>C:\Users\Mixer.Lviv.Ua\AppData\Local\Xamarin\Xamarin.Android.Support.v7.RecyclerView\23.1.1.0\embedded\classes.jar</AdditionalJavaLibraryReference>
+  </AdditionalJavaLibraryReferences>
+  <AdditionalNativeLibraryReferences />
+</Paths>

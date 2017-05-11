@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="XamarinOMDB.Fragments.SearchFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:alpha="0.3"
+        android:src="@drawable/ic_search_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DDD"
+            android:hint="Назва фільму"
+            android:inputType="text"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_toLeftOf="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_login_bg"
+            android:text="Шукати"
+            android:textColor="@color/btn_login"
+            android:elevation="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</FrameLayout>

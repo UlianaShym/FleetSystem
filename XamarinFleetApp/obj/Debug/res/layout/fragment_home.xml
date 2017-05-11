@@ -1,0 +1,29 @@
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" tools:context="XamarinOMDB.Fragments.HomeFragment" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"><ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_gravity="center" android:alpha="0.3" android:src="@drawable/ic_home_24dp" android:visibility="invisible" /><RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="20dp"><TextView android:text="Race:" android:layout_width="50dp" android:layout_height="47dp" android:id="@+id/Race_textview" /><TextView android:text="Points:" android:layout_width="50dp" android:layout_height="47dp" android:id="@+id/Points_textview" android:layout_below="@id/Race_textview" /><TextView android:text="Car:" android:layout_width="50dp" android:layout_height="47dp" android:id="@+id/Car_textview" android:layout_below="@id/Points_textview" /><TextView android:text="some_race_id" android:layout_width="wrap_content" android:layout_height="47dp" android:textColor="@color/link" android:layout_toRightOf="@id/Race_textview" android:id="@+id/Race_link_textview" /><TextView android:text="Points count" android:layout_width="wrap_content" android:layout_height="47dp" android:id="@+id/Points_count_textview" android:layout_toRightOf="@id/Points_textview" android:layout_below="@id/Race_link_textview" /><TextView android:text="some_car_id" android:layout_width="wrap_content" android:layout_height="47dp" android:textColor="@color/link" android:id="@+id/Car_link_textview" android:layout_toRightOf="@id/Car_textview" android:layout_below="@id/Points_count_textview" /><!--
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DDD"
+            android:hint="Назва фільму"
+            android:inputType="text"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_toLeftOf="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+            
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_login_bg"
+            android:text="Шукати"
+            android:textColor="@color/btn_login"
+            android:elevation="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        --></RelativeLayout></FrameLayout>

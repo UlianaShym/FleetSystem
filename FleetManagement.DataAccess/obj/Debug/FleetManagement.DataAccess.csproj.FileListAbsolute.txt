@@ -17,3 +17,13 @@ D:\Documents\GitHub\FleetSystem\FleetManagement.DataAccess\bin\Debug\EntityFrame
 D:\Documents\GitHub\FleetSystem\FleetManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 D:\Documents\GitHub\FleetSystem\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.dll
 D:\Documents\GitHub\FleetSystem\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.pdb
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\FleetManagement.DataAccess.dll.config
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\FleetManagement.DataAccess.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\FleetManagement.DataAccess.pdb
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\EntityFramework.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\EntityFramework.xml
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.csprojResolveAssemblyReference.cache
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement.DataAccess\obj\Debug\FleetManagement.DataAccess.pdb

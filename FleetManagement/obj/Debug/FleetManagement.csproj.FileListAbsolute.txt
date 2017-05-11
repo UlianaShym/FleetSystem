@@ -114,7 +114,6 @@ E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\System.Web.WebPages.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\System.Web.WebPages.Razor.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\WebGrease.dll
-E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\WebMatrix.Data.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\WebMatrix.WebData.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\EntityFramework.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\Newtonsoft.Json.xml
@@ -127,7 +126,6 @@ E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\System.Web.WebPages.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\System.Web.WebPages.Deployment.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\System.Web.WebPages.Razor.xml
-E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\WebMatrix.Data.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\Microsoft.Web.WebPages.OAuth.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\WebMatrix.WebData.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\DotNetOpenAuth.AspNet.xml
@@ -140,7 +138,6 @@ E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\Microsoft.Data.Edm.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\Microsoft.Data.OData.xml
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\System.Spatial.xml
-E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\ru\WebMatrix.Data.resources.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\de\Microsoft.Data.Edm.resources.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\es\Microsoft.Data.Edm.resources.dll
 E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\fr\Microsoft.Data.Edm.resources.dll
@@ -349,3 +346,12 @@ D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.dll
 D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.xml
 D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.Mvc.dll
 D:\Documents\GitHub\FleetSystem\FleetManagement\bin\PagedList.Mvc.xml
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\EntityFramework.SqlServer.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\FleetManagement.DataAccess.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\PagedList.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\PagedList.Mvc.dll
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\FleetManagement.DataAccess.pdb
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\FleetManagement.DataAccess.dll.config
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\EntityFramework.SqlServer.xml
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\PagedList.xml
+E:\Mixer.Lviv.Ua\Програмування\GIT\FleetSystem\FleetManagement\bin\PagedList.Mvc.xml

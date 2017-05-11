@@ -23,6 +23,7 @@ a {
     box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
     right: 0px;
     padding-top: 20px;
+    background-color: rgba(0,0,0,0.3);
 }
 .dropdown-content input{
 	margin: 3px 0 2px 0;
@@ -60,11 +61,11 @@ a {
 .up_menu > div{
 	display:inline-block;
 	color: #fafafa;	
-	margin:10px 0px 10px 5px;
+	margin:5px 10px;
 }
 .up_menu_left{	
-	font-size:130%;
-	margin-top: 30px !important;
+	font-size:1.5em;
+	margin-top: 20px !important;
 }
 .up_menu_right{
 	float:right;
@@ -567,39 +568,93 @@ wc{
 	color:#fff;
 }
 /*----------------------------------------------------------------------*/
+/*                                  Map                                 */
+/*----------------------------------------------------------------------*/
+.map_and_way {
+    background-color: #1e2125;
+    min-height: 700px;
+}
+
+.way_map {
+    min-height: 700px;
+    min-width: 800px;
+    position: absolute !important;
+    width: 70%;
+}
+
+.way_points {
+    margin-left: 70%;
+}
+.gm-style {
+    color: black;
+}
+.my_table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    min-width: 370px;
+    width:100%;
+    text-align: left;
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: auto;
+}
+.my_table > thead {
+        background-color: #13238c;        
+}
+.my_table > thead > tr > th:first-child {
+    border-top-left-radius:10px;
+}
+.my_table > thead > tr > th:last-child {
+    border-top-right-radius: 10px;
+}
+.my_table > tbody > tr:nth-child(even) {
+    background-color: #164dc1;
+}
+.my_table > tbody > tr {
+    background-color: #488ad8;
+}
+    .my_table > tbody > tr:hover {
+        cursor: pointer;
+        font-weight: bold;
+        background-color: #0a3256;
+    }
+/*----------------------------------------------------------------------*/
 /*								responsive								*/
 /*----------------------------------------------------------------------*/
-
 /*---------------------------	Home page	----------------------------*/
 @media screen and (max-width: 988px) {
-    .Truck{
-		width:100%;
-	}
+    .Truck {
+        width: 100%;
+    }
 }
 /*--------------------------	Contact page	------------------------*/
 @media screen and (max-width: 1200px) {
-	.contact_map{
-		position:relative !important;
-		width: 100%;
-	}
-	.contact_us{
-		margin-left: 0;
-		padding-bottom: 20px;
-	}
+    .contact_map {
+        position: relative !important;
+        width: 100%;
+    }
+
+    .contact_us {
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
 }
 /*---------------------------	Car page	----------------------------*/
 @media screen and (max-width: 821px) {
-    .message_form > input, textarea{
-		width: 95%;
-		min-width:200px;
-	}
-	.message_form{
-		width:80%;
-	}
+    .message_form > input, textarea {
+        width: 95%;
+        min-width: 200px;
+    }
+
+    .message_form {
+        width: 80%;
+    }
 }
+
 @media screen and (max-width: 1060px) {
-	.car_content{
-		margin: 25px 10px;
-	}
-    
+    .car_content {
+        margin: 25px 10px;
+    }
 }
